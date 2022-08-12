@@ -12,8 +12,8 @@ document.querySelector('#qwerty').addEventListener('click', e => {
 
 window.addEventListener('keyup', e => {
 	const regex = /[a-z]/i;
-	console.log(e.key);
 	if(regex.test(e.key)){
 		game.handleInteraction(e.key);
 	}
 });
+
